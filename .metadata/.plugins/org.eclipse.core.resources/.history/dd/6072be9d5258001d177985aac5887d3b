@@ -48,7 +48,7 @@ public class TechPage extends JFrame {
 		JButton btnNewButton = new JButton("Add Resources");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				AddResources.main(new String[] {});
+				
 				frame.dispose();
 			}
 		});

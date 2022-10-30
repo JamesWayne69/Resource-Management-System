@@ -48,7 +48,7 @@ public class TechPage extends JFrame {
 		JButton btnNewButton = new JButton("Add Resources");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				AddResources.main(new String[] {});
+				
 				frame.dispose();
 			}
 		});
@@ -57,7 +57,7 @@ public class TechPage extends JFrame {
 		JButton btnViewBooks = new JButton("View Stock");
 		btnViewBooks.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				ViewResources.main(new String[] {});
+				
 			}
 		});
 		btnViewBooks.setFont(new Font("Tahoma", Font.PLAIN, 13));
