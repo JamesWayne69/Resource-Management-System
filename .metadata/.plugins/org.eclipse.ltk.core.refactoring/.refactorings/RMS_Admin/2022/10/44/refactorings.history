@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;RTechnician.java&apos; to &apos;RTechnicianDAO.java&apos;&#x0D;&#x0A;- Original project: &apos;RMS_Admin&apos;&#x0D;&#x0A;- Original element: &apos;RTechnician.java&apos;&#x0D;&#x0A;- Renamed element: &apos;RTechnicianDAO.java&apos;" description="Rename compilation unit &apos;RTechnician.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{RTechnician.java" name="RTechnicianDAO.java" references="false" stamp="1666962576478" version="1.0"/>
+</session>
