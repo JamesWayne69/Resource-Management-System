@@ -44,7 +44,7 @@ public class ViewResources extends JFrame {
 		String column[]=null;
 		try{
 			Connection con=DB.getConnection();
-			PreparedStatement ps=con.prepareStatement("select * from books",ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
+			PreparedStatement ps=con.prepareStatement("select * from resources",ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
 			ResultSet rs=ps.executeQuery();
 			
 			ResultSetMetaData rsmd=rs.getMetaData();
