@@ -45,6 +45,32 @@ public static int issueResource(String Resourcecallno,int req){
 	return status;
 }
 
+public static int procureResource(String Resourcecallno,int req){
+	int status=0;
+	int quantity = 0;
+	try{
+		Connection con=DB.getConnection();
+		
+		PreparedStatement ps=con.prepareStatement("select quantity from resources where resource_id=?");
+		ps.setString(1,Resourcecallno);
+		ResultSet rs=ps.executeQuery();
+		if(rs.next()){
+			quantity=rs.getInt("quantity");
+		}
+		
+		String update1 = Integer.toString(quantity+req);
+
+		PreparedStatement ps2=con.prepareStatement("update resources set quantity=? where resource_id=?;");
+		ps2.setString(1,update1);
+		ps2.setString(2,Resourcecallno);
+		
+		status=ps2.executeUpdate();
+		
+		con.close();
+	}catch(Exception e){System.out.println(e);}
+	return status;
+}
+
 public static boolean checkResource(String Resourcecallno){
 	boolean status=false;
 	try{

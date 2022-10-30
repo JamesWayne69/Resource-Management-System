@@ -70,6 +70,14 @@ public class TechPage extends JFrame {
 			}
 		});
 		btnIssueBook.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		JButton Produce = new JButton("Procure Existing Resources");
+		Produce.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AddResources.main(new String[] {});
+				frame.dispose();
+			}
+		});
+		Produce.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		
 		
 				
@@ -94,6 +102,7 @@ public class TechPage extends JFrame {
 						.addComponent(btnLogout, GroupLayout.PREFERRED_SIZE, 191, GroupLayout.PREFERRED_SIZE)
 						.addComponent(btnIssueBook, GroupLayout.PREFERRED_SIZE, 191, GroupLayout.PREFERRED_SIZE)
 						.addComponent(btnViewBooks, GroupLayout.PREFERRED_SIZE, 191, GroupLayout.PREFERRED_SIZE)
+						.addComponent(Produce, GroupLayout.PREFERRED_SIZE, 191, GroupLayout.PREFERRED_SIZE)
 						.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 191, GroupLayout.PREFERRED_SIZE))
 					.addContainerGap(101, Short.MAX_VALUE))
 		);
@@ -104,6 +113,8 @@ public class TechPage extends JFrame {
 					.addComponent(lblLibrarianSection)
 					.addGap(18)
 					.addComponent(btnNewButton, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
+					.addGap(18)
+					.addComponent(Produce, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
 					.addGap(18)
 					.addComponent(btnViewBooks, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
 					.addGap(18)
